@@ -41,3 +41,23 @@ body {
     margin: 0;
     opacity: 0;       /* set to 0 to make h3 invisible initially */
 }
+
+.panel.active {
+    flex: 5;
+
+}
+
+.panel.active h3 {
+    opacity: 1;
+}
+
+@media(max-width: 480px) {      /* This will apply to any viewsizes under 480 pixels */
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),      /* Remove last two panels under certain width */
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
