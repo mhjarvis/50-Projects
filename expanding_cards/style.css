@@ -42,13 +42,14 @@ body {
     opacity: 0;       /* set to 0 to make h3 invisible initially */
 }
 
-.panel.active {
+.panel.active {     /* applies to obj with class panel and active */
     flex: 5;
 
 }
 
 .panel.active h3 {
     opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;      /* 0.4 is the delay */
 }
 
 @media(max-width: 480px) {      /* This will apply to any viewsizes under 480 pixels */
